@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("chatNode server init...")
-	nodeNum := node.Initiliaze()
+	var nodeNum uint8 = node.Initiliaze()
 	fmt.Printf("Node number is: %v\n", nodeNum)
 
 }
