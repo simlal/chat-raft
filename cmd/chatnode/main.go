@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"chat-raft/pkg/node"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("hello ")
+	fmt.Println("chatNode server init...")
+	nodeNum := node.Initiliaze()
+	fmt.Printf("Node number is: %v\n", nodeNum)
+
 }
